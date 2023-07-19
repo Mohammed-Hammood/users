@@ -40,7 +40,7 @@ function useFetch({ setUsers, search }: Props) {
             searchRef.current = search;
             firstLoad.current = false;
         }
-    }, [url, loading, message, setLoading, search])
+    }, [url, loading, message, setLoading, search, setUsers])
     return {
         loading,
         message,
