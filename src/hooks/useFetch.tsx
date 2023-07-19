@@ -27,6 +27,7 @@ function useFetch({ setUsers, search }: Props) {
                     setUsers(res);
                 }
             } catch (err: any) {
+               
                 setMessage({ status: err.status, text: err.message });
 
             } finally {
