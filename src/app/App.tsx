@@ -4,6 +4,7 @@ import Pages from 'pages';
 function App() {
   return (
     <>
+    {/* here can add header, sidebar, ... or any layouts required through the app */}
       <Pages />
     </>
   );
