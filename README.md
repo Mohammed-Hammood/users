@@ -1,7 +1,7 @@
 ## React app displays users with information
 - `Stack` React, react router, styled-components, TypeScript, Sass
 - Create by create react app
-- App deployed on [https://users-contacts.verce.app](https://users-contacts.verce.app)
+- App deployed on [https://users-contacts.vercel.app](https://users-contacts.vercel.app)
 
 # To run the app locally:
 - clone the repository to your local PC
