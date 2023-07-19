@@ -1,3 +1,14 @@
+## React app displays users with information
+- `Stack` React, react router, styled-components, TypeScript, Sass
+- Create by create react app
+- App deployed on [https://users-contacts.verce.app](https://users-contacts.verce.app)
+
+# To run the app locally:
+- clone the repository to your local PC
+- Install the dependances by `yarn install`
+- Build the app `yarn buid` and start the app `yarn start`
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
