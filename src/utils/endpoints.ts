@@ -1,7 +1,6 @@
 
 // the API is from Node.js on the same server. 
 
-// const baseURL = "https://mohammed-api.vercel.app";
 const baseURL = "https://free-restapi.vercel.app"
 
 export const Endpoints = {
