@@ -79,9 +79,8 @@ type Props = {
 
 const UserTemplate = ({ user, setModal }: Props) => {
     
-    const handleClick = (e:React.MouseEvent<HTMLElement>):void => setModal({ isVisible: true, user });
     return (
-        <Wrapper onClick={handleClick}>
+        <Wrapper onClick={() =>  setModal({ isVisible: true, user })}>
             <div className="card" >
                 <h1 className="card__title" >{user.name}</h1>
                 <div className="card__body" >
