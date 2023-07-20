@@ -12,10 +12,10 @@ export default function HomePage() {
     const { users, setUsers } = useContext(UserContext);
     const [modal, setModal] = useState<{ user?: UserType, isVisible: boolean }>({ isVisible: false });
     const [search, setSearch] = useState<string>("");
-    
+
     //if you want the search to be on the backend, then just remove undefined and pass search to useFetch
     // but for fast search, used search locally
-    const { loading, message, setMessage } = useFetch({ setUsers, search: undefined }); 
+    const { loading, message, setMessage } = useFetch({ setUsers, search: undefined });
 
     const filtersUsers = users.filter(item => item.name.toLowerCase().includes(search.toLowerCase()));
 
@@ -41,10 +41,17 @@ export default function HomePage() {
                         {message.text}
                     </div>}
                     <div className="users__wrapper">
-                        {loading ? <Loader size={60} /> :
+
+                        {loading ?
+                            <Loader size={60} />
+                            :
                             filtersUsers.map(user => (
                                 <UserTemplate
-                                    {...{ user, setModal, key: user.id }}
+                                    {...{
+                                        user,
+                                        setUser: (user: UserType) => setModal({ isVisible: true, user }),
+                                        key: user.id
+                                    }}
                                 />
                             ))}
                     </div>

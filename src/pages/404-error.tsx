@@ -21,8 +21,8 @@ const NotFound:React.FC = (): JSX.Element => {
     return (
         <Wrapper>
             <div className='card'>
-                <h1>404 Страница не найдена!</h1>
-                <Link to="/">Домашняя страница</Link>
+                <h1>404 page not found!</h1>
+                <Link to="/">Home page</Link>
             </div>
         </Wrapper>
     )

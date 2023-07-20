@@ -74,25 +74,25 @@ const Wrapper = styled.div`
 `
 type Props = {
     user: UserType;
-    setModal: (value: { user: UserType, isVisible: boolean }) => void
+    setUser: (user: UserType) => void
 }
 
-const UserTemplate = ({ user, setModal }: Props) => {
-    
+const UserTemplate = ({ user, setUser }: Props) => {
+
     return (
-        <Wrapper onClick={() =>  setModal({ isVisible: true, user })}>
+        <Wrapper onClick={() => setUser(user)}>
             <div className="card" >
                 <h1 className="card__title" >{user.name}</h1>
                 <div className="card__body" >
                     <div className="card__body__phone">
                         <span className="card__body__phone__icon">
-                            <ICON name="phone-regular"/>
+                            <ICON name="phone-regular" />
                         </span>
                         <h2 className="card__body__phone__text">{user.phone}</h2>
                     </div>
                     <div className="card__body__email" >
                         <span className="card__body__email__icon">
-                            <ICON name="email-regular"/>
+                            <ICON name="email-regular" />
                         </span>
                         <h2 className="card__body__email__text">{user.email}</h2>
                     </div>
