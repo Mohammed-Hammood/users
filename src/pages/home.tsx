@@ -19,7 +19,6 @@ export default function HomePage() {
 
     const filtersUsers = users.filter(item => item.name.toLowerCase().includes(search.toLowerCase()));
 
-
     return (
         <>
             <main className="homePage">
